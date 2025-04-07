@@ -1,8 +1,10 @@
 #include <iostream>
-// 此程序包含错误的注释
-/*
-* 注释不能嵌套/* */*/
+
 int main()
 {
+    std::cout << "/*";
+    std::cout << "*/";
+    std::cout << /* "*/" */;    //错误
+    std::cout << /* "*/" /* "/*" */;    // 错误
     return 0;
 }
