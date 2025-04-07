@@ -12,5 +12,13 @@ int main()
     std::cout << n1+n2; 
     std::cout << std::endl;
     std::cout << n1 << " * " << n2 << " = " << n1*n2 << std::endl;
+
+
+    // 练习1.6
+    /*
+    std::cout << "The sum of " << n1;
+            << " and " << n2;
+    */
+    // 会报错 把n1 后面的分号去掉。
     return 0;
 }
