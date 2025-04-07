@@ -10,5 +10,10 @@ int main()
     }
     std::cout << "Sum of 50 to 100 inclusive is "<< sum << std::endl;
 
+    int new_sum = 0, new_val = 10;
+    while (new_val >= 0) {
+        std::cout << new_val << std::endl;
+        --new_val;
+    }
     return 0;
 }
