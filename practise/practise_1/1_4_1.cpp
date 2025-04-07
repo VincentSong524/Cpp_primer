@@ -15,5 +15,19 @@ int main()
         std::cout << new_val << std::endl;
         --new_val;
     }
+
+    std::cout << "请输入两个整数，程序会打印两个整数范围内的所有整数" << std::endl;
+    int max, min, tmp;
+    std::cin >> min >> max;
+    if (max < min) {
+        tmp = max;
+        max = min;
+        min = tmp;
+    }
+    int value = min;
+    while (value <= max) {
+        std::cout << value << std::endl;
+        value++;
+    }
     return 0;
 }
