@@ -1,6 +1,21 @@
 {
     "version": "0.2.0",
     "configurations": [
+
+        // {
+        //     "name": "(lldb) 启动",
+        //     "type": "lldb",
+        //     "request": "launch",
+        //     // "program": "${workspaceFolder}/<my program>",
+        //     "program": "输入程序名称，例如 ${workspaceFolder}/a.out",
+        //     "args": ["-args1", "-args2"],
+        //     "stopAtEntry": false,
+        //     "cwd": "${fileDirname}",
+        //     "environment": [],
+        //     "externalConsole": false,
+        //     "MIMode": "lldb"
+        // },
+
         {
             "name": "C/C++: clang++ 构建和调试活动文件",
             "type": "cppdbg",
@@ -10,7 +25,7 @@
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
-            "externalConsole": true, // 如果是true 就会打开本地终端，  false会使用vs code的终端
+            "externalConsole": false, // 如果是true 就会打开本地终端，  false会使用vs code的终端
             "MIMode": "lldb",
             "preLaunchTask": "C/C++: clang++ 生成活动文件"
         }
