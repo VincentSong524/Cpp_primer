@@ -10,12 +10,24 @@ int main()
     }
     std::cout << "Sum of 50 to 100 inclusive is "<< sum << std::endl;
 
+    // for循环重做
+    sum = 0;
+    for (val = 50; val <= 100; val++)
+        sum += val;
+    std::cout << "Sum of 50 to 100 inclusive is "<< sum << std::endl;
+
     int new_sum = 0, new_val = 10;
     while (new_val >= 0) {
         std::cout << new_val << std::endl;
         --new_val;
     }
 
+    // for循环重做
+    new_sum = 0;
+    for (new_val = 10; new_val >= 0; new_val--)
+        std::cout << new_val << std::endl;
+
+    
     std::cout << "请输入两个整数，程序会打印两个整数范围内的所有整数" << std::endl;
     int max, min, tmp;
     std::cin >> min >> max;
